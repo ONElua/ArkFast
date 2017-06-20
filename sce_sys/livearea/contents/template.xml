@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<livearea style="a1" format-ver="01.00">
+	<livearea-background>
+		<image>bg0.png</image>
+	</livearea-background>
+	<gate>
+	</gate>
+
+	<frame id="frame1" multi="o" autoflip="0" >
+		<liveitem>
+			<image align="left" width="99" height="99" origin="frame">frame_icon.png</image>
+
+			<text origin="image" align="outside-right">
+			</text>
+			<lang>es</lang>
+
+		</liveitem>
+		<liveitem>
+			<image align="left" width="99" height="99" origin="frame">frame_icon.png</image>
+
+			<text origin="image" align="outside-right">
+			</text>
+			<exclude-lang>es</exclude-lang>
+
+		</liveitem>
+	</frame>
+
+	<frame id="frame3" multi="o" autoflip="0" >
+		<liveitem>
+			<text origin="background" line-align="center" margin-bottom="1">
+				<str size="25" bold="on" shadow="on">　</str>
+				<str size="40" bold="on" shadow="on">ARK Fast for 3.60</str> 
+				<str size="25" bold="on" shadow="on">　
+				</str>
+				<str size="21" bold="on" shadow="on">
+					ARK Installer v2.2
+					®2017 Team ONElua - ONElua.x10.mx
+				</str>
+			</text>
+			<lang>es</lang>
+		</liveitem>
+		<liveitem>
+			<text origin="background" line-align="center" margin-bottom="1">
+				<str size="30" bold="on" shadow="on">　</str>
+				<str size="40" bold="on" shadow="on">ARK Fast for 3.60</str> 
+				<str size="30" bold="on" shadow="on">　
+				</str>
+				<str size="21" bold="on" shadow="on">
+					ARK Installer v2.2
+					®2017 Team ONElua - ONElua.x10.mx
+				</str>
+			</text>
+			<exclude-lang>es</exclude-lang>
+		</liveitem>
+	</frame>
+</livearea>
