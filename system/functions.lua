@@ -1,4 +1,4 @@
---------------------Check your Games (ONLY PSP GAMES)------------------------------------------------------
+--------------------Check your Games (ONLY PSP GAMES)-----------------------------------------------------------------------
 list = {data = {}, len = 0, icons = {}, picons = {} }
 
 function reload_list()
@@ -55,33 +55,32 @@ function reload_list()
 	list.len = #list.data
 end
 
-----------------------------Update DataBase-------------------------------------------------------------------
-function update_db(_flag)
-	os.delay(1500)
+----------------------------Update DataBase---------------------------------------------------------------------------------
+function update_db(flag)
+	os.delay(1000)
 	os.updatedb()
-	if _flag and _flag == 1 then
+	if flag then
 		os.message("Your PSVita will restart...\nRemember to activate Henkaku Again",0)
 	else
 		os.message("Your PSVita will restart...\nand your database will be rebuilt",0)
 	end
 	buttons.homepopup(1)
-	os.delay(3500)
+	os.delay(2500)
 	power.restart()
 end
 
-------------------------Check your Free Space-------------------------------------------------------------------
+------------------------Check your Free Space-------------------------------------------------------------------------------
 function check_freespace()
 	local info = os.devinfo("ux0:")
-	if info and info.free > 40 * 1024* 1024 then
+	if info then
 		sizeUxo = info.free
-		return true
-	else
-		sizeUxo = 0
-		return false
+		
+		if (info.free > 40 * 1024* 1024) then return true
+		else return false end
 	end
 end
 
 function delete_bubble(_gameid)
-	files.delete(PATHTOCLON+_gameid)
-	files.delete(PATHTOGAME+_gameid)
+	files.delete(PATHTOCLON.._gameid)
+	files.delete(PATHTOGAME.._gameid)
 end

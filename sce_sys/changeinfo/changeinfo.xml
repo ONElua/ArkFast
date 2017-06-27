@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changeinfo>
+  <changes app_ver="01.00">
+    <![CDATA[
+- Initial release.<br>
+    ]]>
+  </changes>
+    <changes app_ver="02.20">
+    <![CDATA[
+- The PSP mini to install this time is Sazuke vs Commander duplicating Mr.gas and Major_Tom fake download.<br>
+- Hability to clone any PSP game.<br>
+- It tells you if the bubble to clone has a pboot.pbp installed.<br>
+- Allows to remove the pboot.pbp from the clone (if you need a clean bubble).<br>
+    ]]>
+  </changes>
+    <changes app_ver="02.30">
+    <![CDATA[
+- Now you can select how many clones you want to create for each gamebase (1 to 9).<br>
+- Clean code.<br>
+    ]]>
+  </changes>
+</changeinfo>
